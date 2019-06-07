@@ -1,1 +1,132 @@
-我的第一个网页！！！！！
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script>
+/*function my(){
+	var sum1=parseFloat(document.getElementById("a1").value);
+	var sum2=parseFloat(document.getElementById("a2").value);
+	var sum3=parseFloat(document.getElementById("a3").mach);
+	//var sum3=document.a3.innerHTML
+	var sum=0;
+	if(sum3=="+"){
+		sum=sum1+sum2;
+		}
+		else if(sum3=="-"){sum=sum1-sum2;}
+		else if(sum3=="*"){sum=pow(sum1,sum2);}
+		else{sum=sum1/sum2;}
+		document.getElementById("a3").value=sum;
+	}*/
+	
+	var sum=1;;
+	function d1(){
+		//var sum2=parseFloat(document.getElementById("a3").value);
+		var sum1=parseFloat(document.getElementById("a1").value);
+	var sum2=parseFloat(document.getElementById("a2").value);
+		sum=sum1+sum2;
+		document.getElementById("a7").value=sum;
+		}
+		
+		function d2(){
+		var sum1=parseFloat(document.getElementById("a1").value);
+	var sum2=parseFloat(document.getElementById("a2").value);
+		sum=sum1-sum2;
+	document.getElementById("a7").value=sum;
+		}
+		
+		function d3(){
+		var sum1=parseFloat(document.getElementById("a1").value);
+	var sum2=parseFloat(document.getElementById("a2").value);
+		sum=sum1*sum2;
+		document.getElementById("a7").value=sum;
+		}
+		
+		function d4(){
+		var sum1=parseFloat(document.getElementById("a1").value);
+	var sum2=parseFloat(document.getElementById("a2").value);
+		sum=sum1/sum2;
+		document.getElementById("a7").value=sum;
+		}
+		
+		function d5(){
+		var sum1=parseFloat(document.getElementById("a1").value);
+	var sum2=parseFloat(document.getElementById("a2").value);
+		sum=Math.sqrt(sum1);
+		document.getElementById("a7").value=sum;
+		}
+		
+		function d6(){
+		var sum1=parseFloat(document.getElementById("a1").value);
+	 var sum2=parseFloat(document.getElementById("a2").value);
+	var sum3=parseFloat(document.getElementById("b1").value);
+	      if(sum3==0){sum=1;}
+		  if(sum3==1){sum=sum1;}var a=sum1;
+		for(var i=2;i<=sum3;i++){
+			   a*=sum1;
+			   sum=a;
+		     }
+		if(sum3==-1){sum=1/sum1;}
+		for(var j=-2;j>=sum3;j--){
+			a*=sum1;
+			sum=1/a;
+			}
+		document.getElementById("a7").value=sum;
+		}
+    
+</script>
+<style>
+
+.p1{
+	width:15px;height:10px;color:#F00;
+	}
+.p2{
+	background-image:url(../picture/300px-400px.gif);
+	width:300px;height:400px;
+	text-align:left;
+	}
+.p3{
+		width:180px;
+	}
+.p4{
+      width:190px; 
+	}
+
+</style>
+</head>
+
+<body>
+<!--<table border="1"><tr><td>
+<p align="center" >计算器</p>
+数值1：<input type="txt" id="a1" /><br/>
+<p><select>
+<option name="加">+</option>
+<option name="减">-</option>
+<option name="乘">*</option>
+<option name="除">/</option>
+</select></p>
+数值2：<input type="txt" id="a2" /><br/>
+<p><input type="button" value="=" onclick="my()"/></p>
+结果：<input type="text"/ id="a3">
+</td></tr></table>
+</form>-->
+
+
+<table border="1" class="p2"><tr><td>
+<p align="center" >计算器</p>
+数值1：<input type="txt" id="a1" /><br/>
+<p>次方:<input type="text" id="b1" class="p4"/></p>
+<p><input type="button" value="+" id="a3" onclick="d1()"/>       <input type="button" value="-" id="a4" onclick="d2()"/>
+<input type="button" value="*" id="a5" onclick="d3()"/>     
+<input type="button" value="/" id="a6"/ onclick="d4()">
+<input type="button" value="开根" id="a8"/ onclick="d5()">
+<input type="button" value="次方" id="a9"/ onclick="d6()">
+</p>
+<p>数值2：<input type="txt" id="a2" /></p>
+<p ><input type="text" value="=" onclick="my()" class="p1" /></p>
+结果：<input type="text"/ id="a7" class="p3">
+</td></tr></table>
+
+</body>
+</html>
+
